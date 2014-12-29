@@ -11,7 +11,8 @@ nconf.argv().env().file({ file: 'local.json' });
 
 var users = 0;
 
-var server = Hapi.createServer(nconf.get('domain'), nconf.get('port'));
+var port = process.env.PORT || nconf.get('port');
+var server = Hapi.createServer(nconf.get('domain'), port);
 server.views({
   engines: {
     jade: require('jade')
