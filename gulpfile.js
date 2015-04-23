@@ -50,4 +50,4 @@ gulp.task('css', function(){
     .pipe(gulp.dest('dist/css'))
 });
 
-gulp.task('default', ['css', 'js', 'static', 'watch']);
+gulp.task('default', ['css', 'js', 'static']);
