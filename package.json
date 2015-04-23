@@ -8,7 +8,8 @@
     "npm": "1.3.x"
   },
   "scripts": {
-    "start": "gulp && node index.js"
+    "genStart" : "gulp && node index.js",
+    "start": "node index.js"
   },
   "dependencies": {
     "async": "^0.9.0",
